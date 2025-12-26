@@ -1,0 +1,45 @@
+name: gawean
+description: "Gawean: Gamify Todolist - Level up your productivity"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.1 # State management
+  image_picker: ^1.0.4 # Untuk edit foto profile
+  intl: ^0.18.1 # Format date/time
+  path_provider: ^2.1.0 # Untuk simpan foto lokal
+  shared_preferences: ^2.2.2 # Untuk simpan preferensi
+
+  # 🗃 Database & Utilities
+  sqflite: ^2.3.0
+  path: ^1.9.0
+  table_calendar: ^3.0.9
+  fl_chart: ^0.69.0
+
+  # 🎨 UI & Fonts
+  google_fonts: ^6.2.1
+  flutter_feather_icons: ^2.0.0
+  cupertino_icons: ^1.0.8
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/gawean.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/gawean.png"
